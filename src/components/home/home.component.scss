@@ -1,0 +1,50 @@
+@import '~src/_varaibles.scss';
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary;
+  background-image: -webkit-linear-gradient(30deg, $primary 50%, #ffffff 50%);
+  height: 100vh;
+}
+
+.left-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.right-side {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.picture {
+  width: 360px;
+}
+
+.title {
+  text-decoration-line: underline;
+  text-decoration-color: #000000;
+  width: 40%;
+  margin-left: 50px;
+  font-family: Neuville, sans-serif;
+  font-size: 94px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1400px) {
+  .title {
+    font-size: 56px;
+    font-weight: 400;
+  }
+
+  .right-side {
+    width: 30%;
+  }
+}
+
+

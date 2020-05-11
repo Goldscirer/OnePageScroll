@@ -1,0 +1,44 @@
+.arrow-container {
+  position: absolute;
+  left: 45vw;
+  bottom: 0;
+}
+
+.icon {
+  color: #000000;
+  font-size: 52px;
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+.circle
+{
+  cursor: pointer;
+  float: left;
+  margin: 40px;
+  width: 80px;
+  height: 80px;
+  font: 13px/130px 'Barlow Semi Condensed';
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}

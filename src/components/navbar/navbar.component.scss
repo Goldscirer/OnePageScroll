@@ -1,0 +1,33 @@
+@import '~src/_varaibles.scss';
+
+mat-toolbar {
+  --default-height: 50px;
+  z-index: 1;
+}
+
+mat-toolbar[color="primary"] {
+  top: 0;
+  position: fixed;
+  height: var(--default-height);
+}
+
+mat-toolbar[color="warn"] {
+  position: sticky;
+  top: var(--default-height);
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+.link {
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  border-bottom: 5px solid $primary;
+}
+
+.link:hover {
+  border-bottom: 5px solid #ffffff;
+}

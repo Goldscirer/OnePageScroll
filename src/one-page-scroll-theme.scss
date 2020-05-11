@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$one-page-scroll-primary: mat-palette($mat-amber);
+$one-page-scroll-accent:  mat-palette($mat-amber, A200, A100, A400);
+$one-page-scroll-warn:    mat-palette($mat-red);
+
+$one-page-scroll-theme: mat-light-theme($one-page-scroll-primary, $one-page-scroll-accent, $one-page-scroll-warn);
+
+@include angular-material-theme($one-page-scroll-theme);
